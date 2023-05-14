@@ -18,6 +18,10 @@ video {
     color: aliceblue;
 }
 
+.bs-btn-hover-bg{
+  color: rgba(240, 125, 11, 0.7) ;
+}
+
 main {
   width: min(90ch, 100% - 4rem);
   margin-inline: auto;
