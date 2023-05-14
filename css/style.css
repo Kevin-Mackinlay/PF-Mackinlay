@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(35, 35, 35);
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  /* display: block; */
+  
+}
+
+.navbar{
+    background-color: rgb(75, 73, 73) !important;
+}
+
+.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-brand{
+    color: aliceblue;
+}
+
+main {
+  width: min(90ch, 100% - 4rem);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-flow: column;
+}
+
+main h1,
+h2,
+h3 {
+  text-align: center;
+  color: aliceblue !important;
+}
+
+.rounded-3{
+    border: 1px solid rgba(245, 245, 245, 0.419);
+}
+
