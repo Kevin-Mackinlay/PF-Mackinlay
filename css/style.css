@@ -10,17 +10,7 @@ video {
   
 }
 
-.navbar{
-    background-color: rgb(75, 73, 73) !important;
-}
 
-.nav-link, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-brand{
-    color: aliceblue;
-}
-
-.bs-btn-hover-bg{
-  color: rgba(240, 125, 11, 0.7) ;
-}
 
 main {
   width: min(90ch, 100% - 4rem);
@@ -45,9 +35,15 @@ font-family: 'Paytone One', sans-serif;
 
 p{
   margin: 10px;
+  font-family: sans-serif;
 }
 
 .rounded-3{
     border: 2px solid rgba(213, 135, 51, 0.419);
 }
 
+footer{
+ height: 200px;
+ width: 100%;
+ color:#68727a !important;
+}
