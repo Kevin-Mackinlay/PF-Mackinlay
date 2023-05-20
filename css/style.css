@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(35, 35, 35);
 }
@@ -9,8 +15,16 @@ video {
   /* display: block; */
 }
 
+.col-form-label{
+  color: white !important;
+
+}
+
+
+
 .navbar-brand{
   color: rgb(215, 142, 6) !important;
+  margin: 3px;
 }
 
 main {
@@ -23,8 +37,10 @@ main {
   background-color: rgb(35, 35, 35);
 }
 
+
 .card{
   border: 2px solid rgb(215, 142, 6) !important ;
+  margin: 30px !important;
 }
 
 main h1,
@@ -37,16 +53,34 @@ h3 {
   font-family: "Paytone One", sans-serif;
 }
 
+.textocon{
+  color: white;
+}
+
 p {
   margin: 10px;
   font-family: sans-serif;
+  
 }
 
 .rounded-3 {
   border: 2px solid rgba(213, 135, 51, 0.419);
 }
 
+.contenedor{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form{
+margin-top: 100px;
+  margin-bottom: 250px;
+}
+
 footer {
+  margin-top: 20px;
   height: 150px;
   width: 100%;
   color: #575859 !important;

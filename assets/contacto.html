@@ -11,7 +11,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +22,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
@@ -42,25 +42,36 @@
         <div class="collapse navbar-collapse show" id="navbarDark">
           <ul class="navbar-nav me-auto mb-2 mb-xl-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./assets/medicinales.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./././assets/medicinales.html"
                 >Medicinales</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="assets/shop.html"
+              <a class="nav-link active" aria-current="page" href="shop.html"
                 >Shop</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="assets/locación.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="locación.html"
                 >Locación</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="assets/contacto.html">Contacto</a>
+              <a class="nav-link active" href="contacto.html">Contacto</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -77,53 +88,46 @@
     </nav>
 
     <main>
-      <h1>Reino de los Hongos</h1>
-      <img
-        class="rounded-3"
-        src="./././assets/images/tiposdehongos1.jpg"
-        alt=""
-      />
-      <p class="text-white">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo,
-        eligendi expedita? Corrupti, amet voluptatem? Vero, corrupti autem,
-        adipisci amet exercitationem quasi ducimus at neque ipsum tenetur odio
-        hic, consequuntur perferendis.
-      </p>
-      <h2>Hongos comestibles</h2>
-      <img
-        class="rounded-3"
-        src="./././assets/images/comestibles3.jpg"
-        alt=""
-      />
-      <p class="text-white">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, natus
-        maxime porro ipsum labore autem, impedit voluptatum corrupti praesentium
-        inventore voluptatibus nam et commodi laboriosam. Similique corrupti sit
-        odit quas!
-      </p>
-      <h3>Hongos no comestibles y venenosos</h3>
+      <div class="contenerdor">
+        <h1>Como contactarnos</h1>
+        <p class="textocon">
+          Por favor llenar el formulario y apretar el boton de submit para
+          ponerse en contacto con nosotros
+        </p>
+      </div>
+      <form class="form">
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label"
+            >Password</label
+          >
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="texto" class="col-sm-2 col-form-label">Texto</label>
+          <div class="col-sm-10">
+            <input type="texto" class="form-control" id="inputPassword3" />
+          </div>
+        </div>
 
-      <img
-        class="rounded-3"
-        class="img-fluid"
-        src="./././assets/images/hongosvenenosos1.jpg"
-        alt=""
-      />
-      <p class="text-white">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita et
-        fugit corporis aliquam veniam? Asperiores neque nam maxime mollitia sunt
-        omnis necessitatibus aut illum cupiditate ad, voluptatibus qui. Nam,
-        beatae.
-      </p>
+        <button type="submit" class="btn btn-primary">submit</button>
+      </form>
     </main>
 
     <footer>
       <div class="contenedor-iconos">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-youtube"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-pinterest"></a>
       </div>
     </footer>
     <script
