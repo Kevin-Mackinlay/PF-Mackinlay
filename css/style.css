@@ -35,6 +35,44 @@ main {
   background-color: rgb(35, 35, 35);
 }
 
+.indexado{
+  margin-top: 100px;
+  display: flex;
+  flex-direction:row ;
+ 
+}
+
+button{
+  width: 200px;
+  background-color:  rgba(0, 0, 0, 0.286);
+  border: 3px rgb(215, 142, 6) solid ;
+  color: rgb(232, 114, 18);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 220px;
+  
+}
+
+
+.indexado-section{
+
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+   align-content: space-between;
+}
+
+.indexado-foto{
+  width: 500px;
+ 
+}
 .card {
   border: 2px solid rgb(215, 142, 6) !important ;
   margin: 30px !important;
@@ -57,7 +95,10 @@ p {
 }
 
 .rounded-3 {
+  width: 800px;
+  height: 300px;
   border: 2px solid rgba(213, 135, 51, 0.419);
+  margin: 0 auto;
 }
 
 .contenedor {
@@ -270,4 +311,15 @@ footer {
     flex: 0 0 auto;
     width: 50% !important;
 }
+}
+
+.container{
+  width: 800px !important;
+}
+
+.textocon2{
+   color: white;
+  text-align: center;
+  width: 800px;
+  margin-left: 300px;
 }
