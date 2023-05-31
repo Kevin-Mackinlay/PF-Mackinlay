@@ -3,3 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  main {
+    background-color: rgb(35, 35, 35);
+    .col {
+      margin: 20px;
+      p {
+        color: aliceblue;
+      }
+    }
+  }
+}
