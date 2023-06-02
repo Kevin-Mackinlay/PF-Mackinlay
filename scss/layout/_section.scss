@@ -1,8 +1,12 @@
-@import 'utilities/variables';
 
 
 
-.texto{
-    font-weight: 1rem;
-    color: $color-texto ;
+.miClase{
+    .titulo{
+        color: $color-texto;
+       
+    }
+     .texto{
+            color:$color-texto ;
+        }
 }
