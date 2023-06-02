@@ -1,6 +1,9 @@
+@import 'utilities/variables';
 
 .navbar-brand {
-  color: rgb(215, 142, 6) !important;
+  color: $color-principal !important;
   margin: 3px;
 }
+
+
 
