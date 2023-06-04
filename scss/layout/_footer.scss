@@ -1,0 +1,18 @@
+.container-fluid {
+    background-color: $color-fondo;
+    padding-right: 0;
+    padding-left: 0;
+  
+  .lista-footer {
+    background-color: $color-fondo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+
+    .li-footer {
+      margin: 20px;
+      color: rgba(229, 225, 225, 0.742);
+    }
+  }
+}
