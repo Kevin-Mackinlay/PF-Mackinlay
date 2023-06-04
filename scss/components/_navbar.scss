@@ -1,5 +1,8 @@
 .navbar{
-
+ 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color: antiquewhite;
+}
 .navbar-brand {
   color: $color-principal;
   margin: 3px;

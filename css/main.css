@@ -1,3 +1,6 @@
+.navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link.show {
+  color: antiquewhite;
+}
 .navbar .navbar-brand {
   color: #d78e06;
   margin: 3px;
@@ -22,6 +25,7 @@
 .cuerpo-home main .container .row .miClase .titulo {
   color: #d78e06;
 }
+
 .miClase .titulo {
   color: rgba(251, 251, 251, 0.7647058824);
 }
@@ -43,6 +47,7 @@ body {
   background-color: #171717;
   padding-right: 0;
   padding-left: 0;
+  margin-bottom: 20px;
 }
 .container-fluid .lista-footer {
   background-color: #171717;
@@ -50,21 +55,35 @@ body {
   flex-direction: row;
   justify-content: center;
   list-style: none;
+  margin-bottom: 20px;
 }
 .container-fluid .lista-footer .li-footer {
   margin: 20px;
   color: rgba(229, 225, 225, 0.742);
 }
 
-.container .variedades-row {
+.container-uno .row {
   margin: 30px;
 }
-.container .variedades-row .subtitulo {
+.container-uno .row .subtitulo {
   color: #d78e06;
 }
-.container .carousel-item img {
+.container-uno .carousel-item img {
   border: 2px solid #d78e06;
   border-radius: 8px;
+}
+@media (min-width: 786px) {
+  .container-uno .carousel-item {
+    width: 300px;
+  }
+}
+
+h1, h2, h3, h4 {
+  color: #d78e06;
+}
+
+main h1 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

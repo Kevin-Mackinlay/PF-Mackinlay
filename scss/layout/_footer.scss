@@ -2,6 +2,7 @@
     background-color: $color-fondo;
     padding-right: 0;
     padding-left: 0;
+    margin-bottom: 20px;
   
   .lista-footer {
     background-color: $color-fondo;
@@ -9,6 +10,7 @@
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    margin-bottom: 20px;
 
     .li-footer {
       margin: 20px;
