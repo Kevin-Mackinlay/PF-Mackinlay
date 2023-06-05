@@ -12,15 +12,24 @@
       border: 2px solid $color-principal;
       border-radius: 8px;
     }
-    @media (min-width: 786px) {
-    width: 300px;
-  }
+  
   }
 
-  
+    @media (max-width: 786px) {
+    flex-direction: row;
+    width: 100%;
+  }
  
   
   }
- 
+
+  .container-dos{
+  .carousel-item{
+ img{
+     border: 2px solid $color-principal;
+      border-radius: 8px;
+  }
+  } 
+}
 
 
