@@ -76,13 +76,13 @@ main {
         margin: 30px;
       }
     }
-       @media (min-width: 990px) {
+       @media (min-width: 1200px) {
       .intro-containershop{
         display: flex;
         flex-direction: row;
       }
       img {
-        margin-left: 400px;
+        margin-left: 800px;
         border-radius: 8px;
         border: 2px solid rgb(215, 142, 6);
         height: 300px;
