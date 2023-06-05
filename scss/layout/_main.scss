@@ -1,5 +1,5 @@
 main {
-  h1 {
+  h1, h3 {
     text-align: center;
   }
 
@@ -14,6 +14,10 @@ main {
     }
     .textocon {
       color: $color-texto;
+      margin: 30px;
+    }
+    .textocon2{
+       color: $color-texto;
     }
     a {
       text-decoration: none;
@@ -37,6 +41,58 @@ main {
       height: 400px;
       width: 80%;
     }
+    @media (min-width: 468px) {
+      .intro-containershop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      img {
+        margin-left: 120px;
+        border-radius: 8px;
+        border: 2px solid rgb(215, 142, 6);
+        height: 300px;
+        width: 50%;
+      }
+    }
+    @media (min-width: 786px) {
+      .intro-containershop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      img {
+        margin-left: 270px;
+        border-radius: 8px;
+        border: 2px solid rgb(215, 142, 6);
+        height: 300px;
+        width: 30%;
+      }
+      .textocon{
+        margin: 30px;
+      }
+    }
+       @media (min-width: 990px) {
+      .intro-containershop{
+        display: flex;
+        flex-direction: row;
+      }
+      img {
+        margin-left: 400px;
+        border-radius: 8px;
+        border: 2px solid rgb(215, 142, 6);
+        height: 300px;
+        width: 20%;
+      }
+      .textocon{
+        width: 500px; ;
+        margin: 10px;
+      }
+    }
   }
 
   .container-uno {
@@ -46,6 +102,12 @@ main {
       img {
         height: 30%;
       }
+    }
+  }
+  .contenedor {
+    .textocon {
+      color: white;
+      text-align: center;
     }
   }
 }

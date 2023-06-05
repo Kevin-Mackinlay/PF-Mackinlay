@@ -1,19 +1,18 @@
 .container-fluid{
 margin: 5px !important;
 
+.navbar-brand {
+  color: $color-principal;
+  font-weight: bold;
+  margin: 3px;
+}
 
 .navbar{
  margin: 5px;
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
   color: antiquewhite;
 }
-.navbar-brand {
-  color: $color-principal;
-  margin: 3px;
+
 }
-}
-  @media (max-width: 786px) {
-    flex-direction: row;
-    width: 100%;
-  }
+ 
 }

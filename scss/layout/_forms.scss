@@ -1,0 +1,42 @@
+.form {
+  padding-top: 50px;
+  margin: 20px;
+
+  .row {
+    color: white !important;
+  }
+
+  .btn {
+    
+    color: $color-fondo;
+    background-color: $color-principal;
+  }
+  @media (min-width: 468px) {
+    .form {
+      margin: 20px;
+      .btn {
+        margin-right: 100%;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .form {
+      margin: 20px;
+
+      .btn {
+        margin-left: 1000px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .form {
+      margin: 20px;
+
+      .btn {
+        margin-right: 1500px;
+      }
+    }
+  }
+}

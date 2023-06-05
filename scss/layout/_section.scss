@@ -1,13 +1,36 @@
-
-
-
-.miClase{
-    .titulo{
-        color: $color-texto;
-       
+.container-uno {
+  .textocon2 {
+    color: $color-texto;
+    margin: 30px;
+  }
+  .miClase {
+    .titulo {
+      color: $color-texto;
     }
-     .texto{
-            color:$color-texto ;
-        }
-       
+    .texto {
+      color: $color-texto;
+    }
+  }
+  @media (min-width: 990px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.container-dos {
+  .subtitulo {
+    text-align: center;
+  }
+  .miClase {
+    .titulo {
+      color: $color-texto;
+    }
+    .texto {
+      color: $color-texto;
+    }
+  }
+  @media (min-width: 990px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
