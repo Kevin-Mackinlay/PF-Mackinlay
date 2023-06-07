@@ -9,7 +9,8 @@
 .container-fluid .navbar {
   margin: 5px;
 }
-.container-fluid .navbar .navbar-nav .nav-link.active, .container-fluid .navbar .navbar-nav .nav-link.show {
+.container-fluid .navbar .navbar-nav .nav-link.active,
+.container-fluid .navbar .navbar-nav .nav-link.show {
   color: antiquewhite;
 }
 
@@ -176,14 +177,21 @@ body {
   border-radius: 8px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #d78e06;
 }
-h1 h5, h2 h5, h3 h5, h4 h5 {
+h1 h5,
+h2 h5,
+h3 h5,
+h4 h5 {
   font-size: 900;
 }
 
-main h1, main h3 {
+main h1,
+main h3 {
   text-align: center;
 }
 main .intro-contenido {

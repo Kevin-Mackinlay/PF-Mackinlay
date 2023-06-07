@@ -1,10 +1,9 @@
-.container-uno{
-  .row{
+.container-uno {
+  .row {
     margin: 30px;
     .subtitulo {
       color: $color-principal;
     }
-    
   }
 
   .carousel-item {
@@ -12,24 +11,19 @@
       border: 2px solid $color-principal;
       border-radius: 8px;
     }
-  
   }
 
-    @media (max-width: 786px) {
+  @media (max-width: 786px) {
     flex-direction: row;
     width: 100%;
   }
- 
-  
-  }
-
-  .container-dos{
-  .carousel-item{
- img{
-     border: 2px solid $color-principal;
-      border-radius: 8px;
-  }
-  } 
 }
 
-
+.container-dos {
+  .carousel-item {
+    img {
+      border: 2px solid $color-principal;
+      border-radius: 8px;
+    }
+  }
+}

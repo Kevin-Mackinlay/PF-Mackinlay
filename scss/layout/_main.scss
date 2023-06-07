@@ -1,5 +1,6 @@
 main {
-  h1, h3 {
+  h1,
+  h3 {
     text-align: center;
   }
 
@@ -16,8 +17,8 @@ main {
       color: $color-texto;
       margin: 30px;
     }
-    .textocon2{
-       color: $color-texto;
+    .textocon2 {
+      color: $color-texto;
     }
     a {
       text-decoration: none;
@@ -72,12 +73,12 @@ main {
         height: 300px;
         width: 30%;
       }
-      .textocon{
+      .textocon {
         margin: 30px;
       }
     }
-       @media (min-width: 990px) {
-      .intro-containershop{
+    @media (min-width: 990px) {
+      .intro-containershop {
         display: flex;
         flex-direction: row;
       }
@@ -88,8 +89,8 @@ main {
         height: 300px;
         width: 20%;
       }
-      .textocon{
-        width: 500px; ;
+      .textocon {
+        width: 500px;
         margin: 10px;
       }
     }
