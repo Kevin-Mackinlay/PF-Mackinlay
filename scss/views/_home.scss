@@ -2,16 +2,16 @@
   background-color: rgb(18, 18, 18);
   main {
     height: auto;
-    width: min(90ch, 100% - 4rem);
+    width: auto;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     .container {
       .row {
-        width: 300px;
-        margin-left: 20px;
+        width: auto;
+        margin-right: 10px;
         .miClase {
           .titulo {
             color: $color-principal;
@@ -23,7 +23,7 @@
 
   @media (min-width: 468px) {
     .container-uno {
-      margin-left: 20px;
+      margin-right: 40px;
     }
     .container-dos {
       margin-left: 20px;
@@ -46,7 +46,7 @@
       flex-direction: row;
       justify-content: space-between;
       margin-left: 20px;
-      width: 400px;
+      width: auto;
       .carousel-item img {
         size: 30%;
       }
@@ -58,12 +58,12 @@
       width: 400px;
     }
   }
-  .container-uno {
+  .container-dos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 20px;
-    width: 400px;
+    width:auto;
     .carousel-item img {
       size: 30%;
     }

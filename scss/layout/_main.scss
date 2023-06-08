@@ -32,8 +32,9 @@ main {
 
   .intro-containershop {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 10px;
+    flex-direction: column;
+    margin: 30px;
+    
 
     img {
       margin: 30px;
@@ -81,9 +82,76 @@ main {
       .intro-containershop {
         display: flex;
         flex-direction: row;
+        
       }
       img {
-        margin-left: 470px;
+        margin-left: 450px;
+        border-radius: 8px;
+        border: 2px solid rgb(215, 142, 6);
+        height: 300px;
+        width: 20%;
+      }
+      .textocon {
+        width: 500px;
+        margin: 10px;
+      }
+    }
+  }
+
+  .intro-containershop-dos {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+    img {
+      margin: 30px;
+      border-radius: 8px;
+      border: 2px solid rgb(215, 142, 6);
+      height: 400px;
+      width: 80%;
+    }
+    @media (min-width: 468px) {
+      .intro-containershop-dos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      img {
+        margin-left: 120px;
+        border-radius: 8px;
+        border: 2px solid rgb(215, 142, 6);
+        height: 300px;
+        width: 50%;
+      }
+    }
+    @media (min-width: 786px) {
+      .intro-containershop-dos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+      img {
+        margin-left: 270px;
+        border-radius: 8px;
+        border: 2px solid rgb(215, 142, 6);
+        height: 300px;
+        width: 30%;
+      }
+      .textocon {
+        margin: 30px;
+      }
+    }
+    @media (min-width: 990px) {
+      .intro-containershop-dos {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      img {
+        margin-left: 450px;
         border-radius: 8px;
         border: 2px solid rgb(215, 142, 6);
         height: 300px;
@@ -112,3 +180,8 @@ main {
     }
   }
 }
+
+// .container-card{
+//   max-width: auto;
+//   max-height: auto;
+// }

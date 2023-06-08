@@ -2,6 +2,11 @@
   .textocon2 {
     color: $color-texto;
     margin: 30px;
+   
+    @media (min-width: 990px) {
+     width: 900px;
+   margin-left: 350px;
+  }
   }
   .miClase {
     .titulo {
@@ -33,4 +38,8 @@
     display: flex;
     flex-direction: row;
   }
+}
+
+.container{
+  max-width: 800px;
 }

@@ -1,8 +1,11 @@
-.container-fluid {
+.container-footer {
   background-color: $color-fondo;
   padding-right: 0;
   padding-left: 0;
-  margin-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
 
   .lista-footer {
     background-color: $color-fondo;
