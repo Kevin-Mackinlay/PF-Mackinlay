@@ -5,10 +5,7 @@ main {
   }
 
   .intro-contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexible(flex, column, center, center);
 
     .intro-font {
       text-align: center;

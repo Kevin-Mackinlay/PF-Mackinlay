@@ -1,3 +1,10 @@
+.intro-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-fluid {
   margin: 5px !important;
 }
