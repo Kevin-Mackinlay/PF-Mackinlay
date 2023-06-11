@@ -179,13 +179,19 @@
   background: none;
 }
 
-.col .card .card-body {
+.grid-cards {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.grid-cards .col .card .card-body {
   background-color: #171717;
 }
-.col .card .card-body .card-title {
+.grid-cards .col .card .card-body .card-title {
   color: #d78e06;
 }
-.col .card .card-body .card-text {
+.grid-cards .col .card .card-body .card-text {
   color: rgba(251, 251, 251, 0.7647058824);
 }
 
@@ -274,6 +280,43 @@
   .gallery {
     width: 100%;
   }
+}
+
+.galeria-imagenes {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+@media (min-width: 100px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 520px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 728px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.imagen {
+  width: 100%;
+}
+.imagen img {
+  width: 100%;
+  border-radius: 8%;
 }
 
 .container-uno .textocon2 {
@@ -388,6 +431,15 @@ h2 h5,
 h3 h5,
 h4 h5 {
   font-size: 900;
+}
+
+.parrafo {
+  color: rgba(251, 251, 251, 0.7647058824);
+}
+
+h3 {
+  margin-top: 30px;
+  font-weight: 800;
 }
 
 main h1,
@@ -558,13 +610,19 @@ main .contenedor .textocon {
   text-align: center;
 }
 
-.col .card .card-body {
+.grid-cards {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.grid-cards .col .card .card-body {
   background-color: #171717;
 }
-.col .card .card-body .card-title {
+.grid-cards .col .card .card-body .card-title {
   color: #d78e06;
 }
-.col .card .card-body .card-text {
+.grid-cards .col .card .card-body .card-text {
   color: rgba(251, 251, 251, 0.7647058824);
 }
 
@@ -653,6 +711,43 @@ main .contenedor .textocon {
   .gallery {
     width: 100%;
   }
+}
+
+.galeria-imagenes {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+@media (min-width: 100px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 520px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 728px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.imagen {
+  width: 100%;
+}
+.imagen img {
+  width: 100%;
+  border-radius: 8%;
 }
 
 .form {
