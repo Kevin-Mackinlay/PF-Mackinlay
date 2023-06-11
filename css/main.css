@@ -179,13 +179,6 @@
   background: none;
 }
 
-.row .row-cols-1 .row-cols-sm-2 .g-3 .g-3, .row .row-cols-1 .row-cols-sm-2 .g-3 .gy-3 {
-  --bs-gutter-y: 3rem;
-}
-.row .row-cols-1 .row-cols-sm-2 .g-3 .g-3, .row .row-cols-1 .row-cols-sm-2 .g-3 .gx-3 {
-  --bs-gutter-x: 3rem;
-}
-
 .col .card .card-body {
   background-color: #171717;
 }
@@ -194,6 +187,93 @@
 }
 .col .card .card-body .card-text {
   color: rgba(251, 251, 251, 0.7647058824);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.gallery .content {
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border: radius 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+  background: grey;
+}
+.gallery .content .parrafo {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: rgba(251, 251, 251, 0.7647058824);
+}
+.gallery .content :hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.gallery .content img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.gallery .content h3 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.gallery .content a {
+  text-decoration: none;
+}
+.gallery .content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  list-style: none;
+}
+.gallery .content ul .checked {
+  color: #d78e06;
+}
+.gallery .content .buy-1 {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 2px solid #d78e06;
+  color: rgba(251, 251, 251, 0.7647058824);
+  background: #d78e06;
+}
+@media (max-width: 1000px) {
+  .gallery .content .buy-1 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .gallery .content .buy-1 {
+    margin-bottom: 30px;
+  }
+}
+.gallery .content .buy-1:hover {
+  background: none;
+}
+@media (max-width: 1000px) {
+  .gallery .content {
+    width: 50%;
+  }
+}
+@media (max-width: 750px) {
+  .gallery {
+    width: 100%;
+  }
 }
 
 .container-uno .textocon2 {
@@ -478,13 +558,6 @@ main .contenedor .textocon {
   text-align: center;
 }
 
-.row .row-cols-1 .row-cols-sm-2 .g-3 .g-3, .row .row-cols-1 .row-cols-sm-2 .g-3 .gy-3 {
-  --bs-gutter-y: 3rem;
-}
-.row .row-cols-1 .row-cols-sm-2 .g-3 .g-3, .row .row-cols-1 .row-cols-sm-2 .g-3 .gx-3 {
-  --bs-gutter-x: 3rem;
-}
-
 .col .card .card-body {
   background-color: #171717;
 }
@@ -493,6 +566,93 @@ main .contenedor .textocon {
 }
 .col .card .card-body .card-text {
   color: rgba(251, 251, 251, 0.7647058824);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.gallery .content {
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border: radius 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+  background: grey;
+}
+.gallery .content .parrafo {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: rgba(251, 251, 251, 0.7647058824);
+}
+.gallery .content :hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.gallery .content img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.gallery .content h3 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.gallery .content a {
+  text-decoration: none;
+}
+.gallery .content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  list-style: none;
+}
+.gallery .content ul .checked {
+  color: #d78e06;
+}
+.gallery .content .buy-1 {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 2px solid #d78e06;
+  color: rgba(251, 251, 251, 0.7647058824);
+  background: #d78e06;
+}
+@media (max-width: 1000px) {
+  .gallery .content .buy-1 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .gallery .content .buy-1 {
+    margin-bottom: 30px;
+  }
+}
+.gallery .content .buy-1:hover {
+  background: none;
+}
+@media (max-width: 1000px) {
+  .gallery .content {
+    width: 50%;
+  }
+}
+@media (max-width: 750px) {
+  .gallery {
+    width: 100%;
+  }
 }
 
 .form {
