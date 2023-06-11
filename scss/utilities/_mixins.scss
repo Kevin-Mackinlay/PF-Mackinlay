@@ -1,11 +1,10 @@
-@mixin flexible($dis, $direction, $just, $align){
-    display: $dis;
-    flex-direction: $direction;
-    justify-content: $just;
-    align-items: $align;
-
+@mixin flexible($dis, $direction, $just, $align) {
+  display: $dis;
+  flex-direction: $direction;
+  justify-content: $just;
+  align-items: $align;
 }
 
- .intro-contenido{
-    @include flexible(flex, column, center, center)
- }
+.intro-contenido {
+  @include flexible(flex, column, center, center);
+}

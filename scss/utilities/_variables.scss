@@ -1,3 +1,11 @@
 $color-texto: #fbfbfbc3;
 $color-principal: #d78e06;
 $color-fondo: #171717;
+
+$palette: (
+  "primary": rgb(101, 101, 185),
+  "secondary": rgb(135, 209, 135),
+  "success": rgb(15, 241, 15),
+  "danger": rgb(228, 41, 41),
+  "$color-principal": rgb(215, 142, 6),
+);

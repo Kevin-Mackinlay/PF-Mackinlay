@@ -1,21 +1,21 @@
-.grid-cards{
+.grid-cards {
   display: grid;
   gap: 1rem;
   grid-auto-rows: 22rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-.col {
-  .card {
-    .card-body {
-      background-color: $color-fondo;
-      .card-title {
-        color: $color-principal;
-      }
-      .card-text {
-        color: $color-texto;
+  .col {
+    .card {
+      .card-body {
+        background-color: $color-fondo;
+        .card-title {
+          color: $color-principal;
+        }
+        .card-text {
+          color: $color-texto;
+        }
       }
     }
   }
-}
 }
 
 .gallery {
@@ -98,36 +98,30 @@
   }
 }
 
-
-  .galeria-imagenes {
-    width: 100%;
-    margin: auto;
-    display: grid;
+.galeria-imagenes {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  @media (min-width: 100px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media (min-width: 520px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 728px) {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: .5rem;
-    row-gap: .5rem;
-    @media (min-width: 100px) {
-      grid-template-columns: repeat(1, 1fr);
-      
-    }
-    @media (min-width: 520px) {
-      grid-template-columns: repeat(2, 1fr);
-      
-    }
-    @media (min-width: 728px) {
-      grid-template-columns: repeat(3, 1fr);
-      
-    }
-    @media (min-width: 1024px) {
-      grid-template-columns: repeat(4, 1fr);
-      
-    }
   }
-  .imagen{
-   
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.imagen {
+  width: 100%;
+  img {
     width: 100%;
-    img{
-      width: 100%;
-      border-radius: 8%;
-    }
+    border-radius: 8%;
   }
+}

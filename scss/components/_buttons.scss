@@ -1,3 +1,6 @@
-.buy-1{
-    margin-top: 10px;
+.buy-1 {
+  margin-top: 10px;
+  @each $name, $color in $palette {
+    @include button($color-principal);
+  }
 }
