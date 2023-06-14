@@ -217,19 +217,13 @@
   float: left;
   text-align: center;
   border: radius 20px;
-  cursor: pointer;
   padding-top: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background: grey;
 }
 .gallery .content .parrafo {
   margin-bottom: 10px;
   font-size: 18px;
   color: rgba(251, 251, 251, 0.7647058824);
-}
-.gallery .content :hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery .content img {
   width: 200px;
@@ -265,15 +259,8 @@
   color: rgba(251, 251, 251, 0.7647058824);
   background: #d78e06;
 }
-@media (max-width: 1000px) {
-  .gallery .content .buy-1 {
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 750px) {
-  .gallery .content .buy-1 {
-    margin-bottom: 30px;
-  }
+.gallery .content .buy-1 :hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery .content .buy-1:hover {
   background: none;
@@ -283,9 +270,11 @@
     width: 50%;
   }
 }
-@media (max-width: 750px) {
-  .gallery {
-    width: 100%;
+@media (max-width: 320px) {
+  .gallery .content {
+    margin-top: 20px;
+    width: 300px;
+    height: 500px;
   }
 }
 
@@ -326,15 +315,75 @@
   border-radius: 8%;
 }
 
-.container-uno .textocon2 {
-  color: rgba(251, 251, 251, 0.7647058824);
-  margin: 30px;
+.container-tres {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-@media (min-width: 990px) {
-  .container-uno .textocon2 {
-    width: 900px;
-    margin-left: 350px;
+@media (min-width: 320px) {
+  .container-tres {
+    display: flex;
+    flex-direction: column;
   }
+  .container-tres .container-uno {
+    justify-content: center;
+  }
+  .container-tres .container-uno h3 {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .container-tres .container-uno .ratio {
+    max-width: auto;
+    margin: 20px;
+  }
+}
+@media (min-width: 786px) {
+  .container-tres {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1900px) {
+  .container-tres .container-tres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .container-tres .container-uno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+  }
+  .container-tres .container-uno h3 {
+    margin-right: 20px;
+  }
+  .container-tres .container-uno .ratio {
+    width: 50%;
+    margin-left: 170px;
+  }
+  .container-tres .container-cuatro {
+    width: 70%;
+  }
+}
+
+.container-cuatro {
+  margin-top: 30px;
+  max-width: 500px;
+}
+.container-cuatro .textocon {
+  color: rgba(251, 251, 251, 0.7647058824);
+}
+
+.container-uno .ratio {
+  border: 0;
+  width: 90%;
+  margin-left: 100px;
+}
+.container-uno h3 {
+  margin-top: 30px;
+  font-weight: 800;
+  margin-left: 150px;
 }
 .container-uno .miClase .titulo {
   color: rgba(251, 251, 251, 0.7647058824);
@@ -342,10 +391,11 @@
 .container-uno .miClase .texto {
   color: rgba(251, 251, 251, 0.7647058824);
 }
-@media (min-width: 990px) {
+@media (min-width: 320px) {
   .container-uno {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -648,19 +698,13 @@ main .contenedor .textocon {
   float: left;
   text-align: center;
   border: radius 20px;
-  cursor: pointer;
   padding-top: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background: grey;
 }
 .gallery .content .parrafo {
   margin-bottom: 10px;
   font-size: 18px;
   color: rgba(251, 251, 251, 0.7647058824);
-}
-.gallery .content :hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery .content img {
   width: 200px;
@@ -696,15 +740,8 @@ main .contenedor .textocon {
   color: rgba(251, 251, 251, 0.7647058824);
   background: #d78e06;
 }
-@media (max-width: 1000px) {
-  .gallery .content .buy-1 {
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 750px) {
-  .gallery .content .buy-1 {
-    margin-bottom: 30px;
-  }
+.gallery .content .buy-1 :hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery .content .buy-1:hover {
   background: none;
@@ -714,9 +751,11 @@ main .contenedor .textocon {
     width: 50%;
   }
 }
-@media (max-width: 750px) {
-  .gallery {
-    width: 100%;
+@media (max-width: 320px) {
+  .gallery .content {
+    margin-top: 20px;
+    width: 300px;
+    height: 500px;
   }
 }
 

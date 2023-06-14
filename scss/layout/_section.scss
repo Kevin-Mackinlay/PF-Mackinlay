@@ -1,12 +1,70 @@
-.container-uno {
-  .textocon2 {
-    color: $color-texto;
-    margin: 30px;
-
-    @media (min-width: 990px) {
-      width: 900px;
-      margin-left: 350px;
+.container-tres {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @media (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    .container-uno {
+      justify-content: center;
+h3{
+  text-align: center;
+  margin-left: 0px;
+}
+      .ratio {
+        max-width: auto;
+        margin: 20px;
+        
+      }
     }
+  }
+  @media (min-width: 786px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (min-width: 1900px) {
+    .container-tres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    .container-uno{
+      display: flex;
+      flex-direction: column;
+      justify-content: center ;
+      width: 40%;
+      h3{
+        margin-right: 20px;
+      }
+      .ratio{
+        width: 50%;
+        margin-left: 170px;
+      }
+    }
+    .container-cuatro{
+      width: 70%;
+    }
+  }
+}
+
+.container-cuatro {
+  margin-top: 30px;
+  max-width: 500px;
+  .textocon {
+    color: $color-texto;
+  }
+}
+
+.container-uno {
+  .ratio {
+    border: 0;
+    width: 90%;
+    margin-left: 100px;
+  }
+  h3 {
+    margin-top: 30px;
+    font-weight: 800;
+    margin-left: 150px;
   }
   .miClase {
     .titulo {
@@ -16,9 +74,10 @@
       color: $color-texto;
     }
   }
-  @media (min-width: 990px) {
+  @media (min-width: 320px) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
