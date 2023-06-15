@@ -5,14 +5,56 @@
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   .col {
     .card {
+      background-color: rgba(246, 142, 104, 0.832);
+      margin: 10px;
+      border: 2px solid goldenrod;
       .card-body {
-        background-color: $color-fondo;
+        background-color: rgba(246, 142, 104, 0.832);
+        margin: 10px;
+        border: 2px solid goldenrod;
         .card-title {
           color: $color-principal;
         }
         .card-text {
           color: $color-texto;
         }
+      }
+    }
+  }
+  @media (min-width: 320px) {
+    .card {
+      background-color: rgba(246, 142, 104, 0.832);
+      margin: 10px;
+      border: 2px solid goldenrod;
+    }
+    .card-img-top {
+      width: 80%;
+    }
+    .card-body {
+      .card-title {
+        font-weight: 800;
+        position: relative;
+        bottom: 10px;
+      }
+      p {
+        position: relative;
+        bottom: 10px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .card {
+      background-color: rgba(250, 167, 137, 0.687);
+      margin: 10px;
+      border: 2px solid goldenrod;
+    }
+    .card-img-top {
+      width: 80%;
+    }
+    .card-body {
+      .card-title {
+        font-weight: 800;
       }
     }
   }
@@ -31,18 +73,15 @@
     box-sizing: border-box;
     float: left;
     text-align: center;
-    border: radius 20px;
-    // cursor: pointer;
+    border-radius: 8px;
     padding-top: 10px;
-    // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgb(0, 0, 0, 0.22);
-    // transition: 0.4s;
-    background: grey;
+    background: rgb(201, 198, 198);
+    border: 2px solid goldenrod; ;
     .parrafo {
       margin-bottom: 10px;
       font-size: 18px;
-      color: $color-texto;
+      color: $color-fondo;
     }
-   
 
     img {
       width: 200px;
@@ -77,25 +116,24 @@
       border: 2px solid $color-principal;
       color: $color-texto;
       background: $color-principal;
-       :hover {
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    }
-     
+      :hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      }
     }
     .buy-1:hover {
       background: none;
     }
-    @media (max-width: 1000px) {
+    @media (min-width: 1920px) {
+    }
+    @media (min-width: 768px) {
       width: 50%;
     }
-     @media (max-width: 320px) {
-    margin-top: 20px;
-    width: 300px;
-   height: 500px;
-  
+    @media (min-width: 320px) {
+      margin-top: 20px;
+      width: 300px;
+      height: 500px;
+    }
   }
-  }
- 
 }
 
 .galeria-imagenes {

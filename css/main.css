@@ -192,14 +192,54 @@
   grid-auto-rows: 22rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
+.grid-cards .col .card {
+  background-color: rgba(246, 142, 104, 0.832);
+  margin: 10px;
+  border: 2px solid goldenrod;
+}
 .grid-cards .col .card .card-body {
-  background-color: #171717;
+  background-color: rgba(246, 142, 104, 0.832);
+  margin: 10px;
+  border: 2px solid goldenrod;
 }
 .grid-cards .col .card .card-body .card-title {
   color: #d78e06;
 }
 .grid-cards .col .card .card-body .card-text {
   color: rgba(251, 251, 251, 0.7647058824);
+}
+@media (min-width: 320px) {
+  .grid-cards .card {
+    background-color: rgba(246, 142, 104, 0.832);
+    margin: 10px;
+    border: 2px solid goldenrod;
+  }
+  .grid-cards .card-img-top {
+    width: 80%;
+  }
+  .grid-cards .card-body .card-title {
+    font-weight: 800;
+    position: relative;
+    bottom: 10px;
+  }
+  .grid-cards .card-body p {
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-cards .card {
+    background-color: rgba(250, 167, 137, 0.687);
+    margin: 10px;
+    border: 2px solid goldenrod;
+  }
+  .grid-cards .card-img-top {
+    width: 80%;
+  }
+  .grid-cards .card-body .card-title {
+    font-weight: 800;
+  }
 }
 
 .gallery {
@@ -216,14 +256,15 @@
   box-sizing: border-box;
   float: left;
   text-align: center;
-  border: radius 20px;
+  border-radius: 8px;
   padding-top: 10px;
-  background: grey;
+  background: rgb(201, 198, 198);
+  border: 2px solid goldenrod;
 }
 .gallery .content .parrafo {
   margin-bottom: 10px;
   font-size: 18px;
-  color: rgba(251, 251, 251, 0.7647058824);
+  color: #171717;
 }
 .gallery .content img {
   width: 200px;
@@ -265,12 +306,12 @@
 .gallery .content .buy-1:hover {
   background: none;
 }
-@media (max-width: 1000px) {
+@media (min-width: 768px) {
   .gallery .content {
     width: 50%;
   }
 }
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .gallery .content {
     margin-top: 20px;
     width: 300px;
@@ -673,14 +714,54 @@ main .contenedor .textocon {
   grid-auto-rows: 22rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
+.grid-cards .col .card {
+  background-color: rgba(246, 142, 104, 0.832);
+  margin: 10px;
+  border: 2px solid goldenrod;
+}
 .grid-cards .col .card .card-body {
-  background-color: #171717;
+  background-color: rgba(246, 142, 104, 0.832);
+  margin: 10px;
+  border: 2px solid goldenrod;
 }
 .grid-cards .col .card .card-body .card-title {
   color: #d78e06;
 }
 .grid-cards .col .card .card-body .card-text {
   color: rgba(251, 251, 251, 0.7647058824);
+}
+@media (min-width: 320px) {
+  .grid-cards .card {
+    background-color: rgba(246, 142, 104, 0.832);
+    margin: 10px;
+    border: 2px solid goldenrod;
+  }
+  .grid-cards .card-img-top {
+    width: 80%;
+  }
+  .grid-cards .card-body .card-title {
+    font-weight: 800;
+    position: relative;
+    bottom: 10px;
+  }
+  .grid-cards .card-body p {
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-cards .card {
+    background-color: rgba(250, 167, 137, 0.687);
+    margin: 10px;
+    border: 2px solid goldenrod;
+  }
+  .grid-cards .card-img-top {
+    width: 80%;
+  }
+  .grid-cards .card-body .card-title {
+    font-weight: 800;
+  }
 }
 
 .gallery {
@@ -697,14 +778,15 @@ main .contenedor .textocon {
   box-sizing: border-box;
   float: left;
   text-align: center;
-  border: radius 20px;
+  border-radius: 8px;
   padding-top: 10px;
-  background: grey;
+  background: rgb(201, 198, 198);
+  border: 2px solid goldenrod;
 }
 .gallery .content .parrafo {
   margin-bottom: 10px;
   font-size: 18px;
-  color: rgba(251, 251, 251, 0.7647058824);
+  color: #171717;
 }
 .gallery .content img {
   width: 200px;
@@ -746,12 +828,12 @@ main .contenedor .textocon {
 .gallery .content .buy-1:hover {
   background: none;
 }
-@media (max-width: 1000px) {
+@media (min-width: 768px) {
   .gallery .content {
     width: 50%;
   }
 }
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .gallery .content {
     margin-top: 20px;
     width: 300px;
