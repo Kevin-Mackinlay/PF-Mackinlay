@@ -76,7 +76,7 @@
     border-radius: 8px;
     padding-top: 10px;
     background: rgb(201, 198, 198);
-    border: 2px solid goldenrod; ;
+    border: 2px solid goldenrod; 
     .parrafo {
       margin-bottom: 10px;
       font-size: 18px;
@@ -86,6 +86,7 @@
     img {
       width: 200px;
       height: 200px;
+      object-fit: contain;
       text-align: center;
       margin: 0 auto;
       display: block;

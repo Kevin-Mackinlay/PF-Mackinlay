@@ -39,6 +39,7 @@
   margin-bottom: 40px;
   font-size: 18px;
   color: rgba(251, 251, 251, 0.7647058824);
+  width: 800px;
 }
 .header .btn-home {
   display: flex;
@@ -77,24 +78,24 @@
   font-weight: 600;
   text-transform: uppercase;
 }
-.content p {
+.content .parrafo-principal {
   margin-bottom: 40px;
   font-size: 18px;
   color: rgba(251, 251, 251, 0.7647058824);
   padding: 0 100px;
+  width: 800px;
 }
 .content .sau {
   padding: 30px;
   background: #171717;
 }
-
-.box-container {
+.content .box-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 }
-.box-container .box {
+.content .box-container .box {
   height: 11rem;
   width: 17rem;
   background: rgb(50, 48, 48);
@@ -102,8 +103,9 @@
   border-radius: 1rem;
   box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
   margin: 2rem;
+  border: 2px solid goldenrod;
 }
-.box-container i {
+.content .box-container i {
   height: 3rem;
   width: 3rem;
   line-height: 3rem;
@@ -114,20 +116,39 @@
   font-size: 2rem;
   margin: 1rem 0;
 }
-.box-container h3 {
+.content .box-container h3 {
   font-size: 20px;
   color: #d78e06;
 }
-.box-container p {
-  padding: 0 100px;
-  font-size: 16px;
+.content .box-container .parrafo-secundario {
+  color: rgba(251, 251, 251, 0.7647058824);
+  position: relative;
+  bottom: 20px;
+}
+.content .box-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  position: relative;
+  bottom: 20px;
+}
+@media (min-width: 320px) {
+  .content .box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .box-container .header .title {
+    font-size: medium;
+  }
 }
 @media (max-width: 768px) {
-  .box-container .box {
+  .content .box-container .box {
     height: 6rem;
     width: 10rem;
   }
-  .box-container p {
+  .content .box-container p {
     display: none;
   }
 }
@@ -269,6 +290,7 @@
 .gallery .content img {
   width: 200px;
   height: 200px;
+  object-fit: contain;
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -791,6 +813,7 @@ main .contenedor .textocon {
 .gallery .content img {
   width: 200px;
   height: 200px;
+  object-fit: contain;
   text-align: center;
   margin: 0 auto;
   display: block;
