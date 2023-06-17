@@ -1,12 +1,13 @@
-.header {
+.content-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 60vh;
   background: url(../assets/images/hongoheaderye.jpg) no-repeat center;
+  background-attachment: fixed;
   background-size: cover;
   .title {
-    margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
@@ -15,7 +16,6 @@
     margin-bottom: 40px;
     font-size: 18px;
     color: $color-texto;
-    width: 800px;
   }
   .btn-home {
     display: flex;
@@ -35,20 +35,48 @@
       background: $color-principal;
     }
   }
-  @media (max-width: 768px) {
+  @media (min-width: 320px) {
+    .title {
+      font-size: larger;
+      color: rgb(225, 109, 66);
+      font-weight: 900;
+    }
+    .parrafo-principal {
+      font-weight: 800;
+    }
+    .btn {
+      position: relative;
+      top: 30px;
+    }
+  }
+  @media (min-width: 768px) {
     .title {
       margin-bottom: 0;
       font-size: 40px;
     }
   }
+  @media (min-width: 1900px) {
+    .title {
+      font-size: 100px;
+    }
+    .parrafo-principal {
+      font-size: 60px;
+    }
+    .btn {
+      position: relative;
+      top: 30px;
+      width: 200px;
+    }
+  }
 }
 
-.content {
-  height: 60vh;
+.content-sau {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:rgb(33 31 31);
+
   .title {
     margin-top: 30px;
     font-size: 60px;
@@ -56,17 +84,28 @@
     text-transform: uppercase;
   }
 
-  .parrafo-principal {
+  .parrafo-principaldos {
     margin-bottom: 40px;
     font-size: 18px;
     color: $color-texto;
     padding: 0 100px;
     width: 800px;
   }
-
-  .sau {
-    padding: 30px;
-    background: $color-fondo;
+  @media (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: large;
+      font-weight: 800;
+    }
+    .parrafo-principaldos {
+      width: 400px;
+    }
+  }
+  @media (min-width: 768px) {
+    .parrafo-principaldos {
+      width: 700px;
+    }
   }
 
   .box-container {
@@ -74,6 +113,10 @@
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+    h3 {
+      position: relative;
+      bottom: 10px;
+    }
     .box {
       height: 11rem;
       width: 17rem;
@@ -82,7 +125,7 @@
       border-radius: 1rem;
       box-shadow: 0 0.3rem 5rem rgb(0, 0, 0, 0.5);
       margin: 2rem;
-      border: 2px solid goldenrod;
+      border: 4px solid goldenrod;
     }
     i {
       height: 3rem;
@@ -112,46 +155,21 @@
       bottom: 20px;
     }
     @media (min-width: 320px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .header {
-        .title {
-          font-size: medium;
+      .box-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 200px;
+        .box {
+          width: 100px;
         }
       }
     }
-    @media (max-width: 768px) {
-      .box {
-        height: 6rem;
-        width: 10rem;
-      }
-      p {
-        display: none;
-      }
-    }
   }
 }
 
-.about {
-  background-color: rgb(113 112 112);
-  .btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 40px;
-    border: 2px solid $color-principal;
-    color: $color-texto;
-    background: $color-principal;
-  }
-  .btn:hover {
-    background: none;
-  }
-}
-
-.price {
-  background: url(../assets/images/prices2.jpg) no-repeat center;
-  background-attachment: fixed;
+.content-price {
+  background: url(../assets/images/preciostres.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
 
@@ -171,12 +189,44 @@
   .btn:hover {
     background: none;
   }
+  @media (min-width: 320px) {
+    .title {
+      font-size: x-large;
+      font-weight: 800;
+      position: relative;
+      top: 100px;
+      color: rgb(225, 109, 66);
+      background-color: antiquewhite;
+    }
+    p {
+      width: 0px;
+      visibility: hidden;
+    }
+    .btn {
+      position: relative;
+      bottom: 60px;
+    }
+  }
+  @media (min-width: 768px) {
+    .title {
+      color: $color-principal;
+      font-weight: 800;
+      font-size: x-large;
+    }
+  }
 }
 
 .contact {
   padding-top: 20px;
   padding-bottom: 0;
-  background-color: rgb(245 189 115);
+  background-color:rgb(33 31 31);
+  height: 300px;
+  .title {
+    font-weight: 800;
+  }
+  p {
+    color: $color-texto;
+  }
   .btn {
     display: inline-block;
 
@@ -184,6 +234,8 @@
     border: 2px solid $color-principal;
     color: $color-texto;
     background: $color-principal;
+    position: relative;
+    top: 50px;
   }
   .btn:hover {
     background: none;

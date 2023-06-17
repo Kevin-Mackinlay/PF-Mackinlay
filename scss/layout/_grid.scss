@@ -5,7 +5,7 @@
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   .col {
     .card {
-      background-color: rgba(246, 142, 104, 0.832);
+      background-color: rgba(247, 100, 47, 0.832);
       margin: 10px;
       border: 2px solid goldenrod;
       .card-body {
@@ -17,6 +17,7 @@
         }
         .card-text {
           color: $color-texto;
+          font-weight: 800;
         }
       }
     }
@@ -45,7 +46,7 @@
   }
   @media (min-width: 768px) {
     .card {
-      background-color: rgba(250, 167, 137, 0.687);
+      background-color: rgba(255, 107, 54, 0.687);
       margin: 10px;
       border: 2px solid goldenrod;
     }
@@ -54,6 +55,10 @@
     }
     .card-body {
       .card-title {
+        font-weight: 900;
+      }
+      .card-text {
+        color: $color-fondo;
         font-weight: 800;
       }
     }
@@ -67,6 +72,7 @@
   justify-content: center;
   align-items: center;
   margin: 50px 0;
+
   .content {
     width: 20%;
     margin: 15px;
@@ -76,7 +82,7 @@
     border-radius: 8px;
     padding-top: 10px;
     background: rgb(201, 198, 198);
-    border: 2px solid goldenrod; 
+    border: 2px solid goldenrod;
     .parrafo {
       margin-bottom: 10px;
       font-size: 18px;
@@ -125,6 +131,10 @@
       background: none;
     }
     @media (min-width: 1920px) {
+      
+      h3 {
+        font-size: xx-large;
+      }
     }
     @media (min-width: 768px) {
       width: 50%;
