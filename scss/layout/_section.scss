@@ -7,14 +7,13 @@
     flex-direction: column;
     .container-uno {
       justify-content: center;
-h3{
-  text-align: center;
-  margin-left: 0px;
-}
+      h3 {
+        text-align: center;
+        margin-left: 0px;
+      }
       .ratio {
         max-width: auto;
         margin: 20px;
-        
       }
     }
   }
@@ -23,25 +22,25 @@ h3{
     flex-direction: row;
   }
   @media (min-width: 1900px) {
-    .container-tres{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    .container-tres {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
     }
-    .container-uno{
+    .container-uno {
       display: flex;
       flex-direction: column;
-      justify-content: center ;
+      justify-content: center;
       width: 40%;
-      h3{
+      h3 {
         margin-right: 20px;
       }
-      .ratio{
+      .ratio {
         width: 50%;
         margin-left: 170px;
       }
     }
-    .container-cuatro{
+    .container-cuatro {
       width: 70%;
     }
   }
