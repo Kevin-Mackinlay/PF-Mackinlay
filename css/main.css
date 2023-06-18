@@ -286,12 +286,36 @@
 }
 @media (min-width: 320px) {
   .grid-cards .card {
+    margin: auto;
+    display: block;
     background-color: rgba(246, 142, 104, 0.832);
     margin: 10px;
     border: 2px solid goldenrod;
   }
-  .grid-cards .card-img-top {
-    width: 80%;
+  .grid-cards .card .card-img-top {
+    width: 70%;
+  }
+  .grid-cards .card-body .card-title {
+    font-weight: 800;
+    position: relative;
+    bottom: 10px;
+  }
+  .grid-cards .card-body p {
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 375px) {
+  .grid-cards .card {
+    margin: auto;
+    display: block;
+    background-color: rgba(246, 142, 104, 0.832);
+    margin: 10px;
+    border: 2px solid goldenrod;
+  }
+  .grid-cards .card .card-img-top {
+    width: 60%;
   }
   .grid-cards .card-body .card-title {
     font-weight: 800;
@@ -380,6 +404,7 @@
   border: 2px solid #d78e06;
   color: rgba(251, 251, 251, 0.7647058824);
   background: #d78e06;
+  border-radius: 8px;
 }
 .gallery .content .buy-1 :hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -819,12 +844,36 @@ main .contenedor .textocon {
 }
 @media (min-width: 320px) {
   .grid-cards .card {
+    margin: auto;
+    display: block;
     background-color: rgba(246, 142, 104, 0.832);
     margin: 10px;
     border: 2px solid goldenrod;
   }
-  .grid-cards .card-img-top {
-    width: 80%;
+  .grid-cards .card .card-img-top {
+    width: 70%;
+  }
+  .grid-cards .card-body .card-title {
+    font-weight: 800;
+    position: relative;
+    bottom: 10px;
+  }
+  .grid-cards .card-body p {
+    position: relative;
+    bottom: 10px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 375px) {
+  .grid-cards .card {
+    margin: auto;
+    display: block;
+    background-color: rgba(246, 142, 104, 0.832);
+    margin: 10px;
+    border: 2px solid goldenrod;
+  }
+  .grid-cards .card .card-img-top {
+    width: 60%;
   }
   .grid-cards .card-body .card-title {
     font-weight: 800;
@@ -913,6 +962,7 @@ main .contenedor .textocon {
   border: 2px solid #d78e06;
   color: rgba(251, 251, 251, 0.7647058824);
   background: #d78e06;
+  border-radius: 8px;
 }
 .gallery .content .buy-1 :hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);

@@ -24,12 +24,15 @@
   }
   @media (min-width: 320px) {
     .card {
+       margin: auto;
+      display: block;
       background-color: rgba(246, 142, 104, 0.832);
       margin: 10px;
       border: 2px solid goldenrod;
-    }
-    .card-img-top {
-      width: 80%;
+
+      .card-img-top {
+        width: 70%;
+      }
     }
     .card-body {
       .card-title {
@@ -44,6 +47,33 @@
       }
     }
   }
+
+  @media (min-width: 375px) {
+    .card {
+      margin: auto;
+      display: block;
+      background-color: rgba(246, 142, 104, 0.832);
+      margin: 10px;
+      border: 2px solid goldenrod;
+
+      .card-img-top {
+        width: 60%;
+      }
+    }
+    .card-body {
+      .card-title {
+        font-weight: 800;
+        position: relative;
+        bottom: 10px;
+      }
+      p {
+        position: relative;
+        bottom: 10px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
   @media (min-width: 768px) {
     .card {
       background-color: rgba(255, 107, 54, 0.687);
@@ -123,6 +153,7 @@
       border: 2px solid $color-principal;
       color: $color-texto;
       background: $color-principal;
+      border-radius: 8px;
       :hover {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
       }
